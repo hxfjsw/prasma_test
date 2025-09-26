@@ -4,7 +4,9 @@
   "description": "express vercel boilerplate",
   "main": "index.js",
   "scripts": {
-    "dev": "now dev"
+    "dev": "now dev",
+    "start": "npx prisma db push && node index.js",
+    "start:dev": "npx prisma db push && now dev"
   },
   "dependencies": {
     "@prisma/client": "6.16.2",
